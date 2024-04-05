@@ -1,0 +1,5 @@
+This is a test.
+The cat is cute.
+The dog is friendly.
+Python is awesome.
+These cats are amazing creatures.

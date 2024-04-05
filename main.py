@@ -55,3 +55,14 @@ def filter_file(input_file: str, output_file: str, keyword: str) -> None:
     lines = read_file(input_file)
     filtered_lines = filter_lines(lines, keyword)
     write_file(output_file, filtered_lines)
+
+
+if __name__ == "__main__":
+    try:
+        input_file = "test.txt"  # Ваш вхідний файл
+        output_file = "filtered.txt"  # Вихідний файл, куди буде записаний результат
+        keyword = "cat"  # Ключове слово, яке потрібно знайти
+
+        filter_file(input_file, output_file, keyword)
+    except:
+        print('An error occurred')
