@@ -27,6 +27,20 @@ def filter_lines(lines: list, keyword: str) -> list:
     return filtered_lines
 
 
+def write_file(output_file: str, lines: list) -> None:
+    """
+    Функція для запису списку рядків у файл.
+
+    :param output_file: Ім'я файлу для запису результатів
+    :type output_file: str
+    :param lines: Список рядків для запису
+    :type lines: list
+    """
+    with open(output_file, 'w') as file:
+        for line in lines:
+            file.write(line)
+
+
 def filter_file(input_file: str, output_file: str, keyword: str) -> None:
     """
     Головна функція для фільтрації файлу за певним ключовим словом.
