@@ -1,13 +1,12 @@
-def read_file(input_file: str) -> list[str]:
+def read_file(file_path: str) -> list:
     """
-    Read the content of a file.
+    Функція для зчитування вмісту файлу та повернення списку рядків.
 
-    Args:
-        input_file (str): The path to the input file.
-
-    Returns:
-        list[str]: A list containing each line of the file as a string.
+    :param file_path: Шлях до файлу
+    :type file_path: str
+    :return: Список рядків з файлу
+    :rtype: list
     """
-    with open(input_file, 'r') as f:
-        lines = f.readlines()
-        return lines
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+    return lines
